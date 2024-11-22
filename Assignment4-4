@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class HexagonAreaCalculator {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user to enter the side of the hexagon
+        System.out.print("Enter the length of a side of the hexagon: ");
+        double side = scanner.nextDouble();
+        
+        // Calculate the area of the hexagon
+        double area = (3 * Math.sqrt(3) / 2) * Math.pow(side, 2);
+        
+        // Display the area
+        System.out.printf("The area of the hexagon with side length %.2f is %.2f%n", side, area);
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
